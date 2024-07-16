@@ -25,7 +25,8 @@ const prepareDOMElements = () => {
 const prepareDOMEvents = () => {
 	navBurgerBtn.addEventListener('click', handleBurgerBtnClick)
 	handleNavMobileItemClick()
-	addScrollSpy()
+	checkScrollSpy()
+	window.addEventListener('resize', checkScrollSpy)
 }
 
 const handleBurgerBtnClick = () => {
@@ -55,9 +56,12 @@ const activeClassReset = () => {
 	})
 }
 
-const addScrollSpy = () => {
+const checkScrollSpy = () => {
 	if (window.innerWidth >= 992) {
 		window.addEventListener('scroll', scrollSpyHandle)
+	}
+	else{
+		window.removeEventListener('scroll', scrollSpyHandle)
 	}
 }
 
