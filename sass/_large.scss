@@ -1,0 +1,157 @@
+@media (min-width: 992px) {
+	.nav {
+		&__burger-btn {
+			display: none;
+		}
+
+		&__items {
+			&-mobile {
+				display: none;
+			}
+
+			&-desktop {
+				display: flex;
+			}
+		}
+
+		&__item-desktop {
+			position: relative;
+			padding: 0.6em;
+			margin: 0.2em;
+			font-size: 2.2rem;
+			color: colors.$black;
+
+			&:hover,
+			&--active {
+				color: colors.$secondary;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 3px;
+				width: 100%;
+				background-color: colors.$secondary;
+				transform: scaleX(0);
+				transform-origin: right;
+				transition: transform 0.3s;
+			}
+
+			&:hover::after {
+				transform: scaleX(1);
+				transform-origin: left;
+			}
+		}
+	}
+
+	.section {
+		&__heading {
+			font-size: 4rem;
+
+			&-text {
+				font-size: 2.2rem;
+			}
+		}
+	}
+
+	.header {
+		> .wrapper {
+			max-width: 900px;
+		}
+
+		&__text-heading {
+			font-size: 2.6rem;
+		}
+
+		&__text {
+			font-size: 2.2rem;
+		}
+	}
+
+	.rooms {
+		&__card {
+			max-width: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 90%;
+
+			&-name {
+				font-size: 3.2rem;
+			}
+
+			&-img {
+				padding: 0.6em;
+				width: 300px;
+                height: 300px;
+			}
+
+			&-details {
+				padding: 0.8em;
+				font-size: 1.8rem;
+			}
+
+			&-text {
+				margin-bottom: 0.6em;
+				line-height: 1.4;
+			}
+
+            &-btn{
+                padding: 0.6em;
+                font-size: 2rem;
+            }
+		}
+	}
+
+    .voucher{
+        &__cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__card{
+			width: 45%;
+
+            &-bot{
+                margin: 1.6em 1.2em;
+            }
+
+            &-text{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .reviews{
+        min-height: 500px;
+
+        > .wrapper{
+            max-width: 950px;
+        }
+
+        &__box{
+            font-size: 1.8rem;
+
+            &-room-name{
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .media{
+        &__yt-film{
+            margin-bottom: 5em;
+            max-width: 800px;
+        }
+    }
+
+    .contact{
+        &__text{
+            font-size: 1.8rem;
+        }
+    }
+}

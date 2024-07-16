@@ -1,0 +1,31 @@
+@media (min-width: 768px){
+    .nav{
+        &__logo{
+            margin: .4em 1em;
+            height: 80px;
+        }
+    }
+
+    .section{
+        padding: 3.4em 2.4em;
+        scroll-margin-top: 86px;
+    }
+
+    .header{
+        background-image: url('../img/heros/hero_medium.webp');
+    }
+
+    .voucher{
+        background-image: url('../img/heros/hero_voucher_medium.webp');
+    }
+
+    .reviews{
+        background-image: url('../img/heros/reviews_hero_medium.webp');
+    }
+
+    .media{
+        &__yt-film{
+            margin-bottom: 3em;
+        }
+    }
+}

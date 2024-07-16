@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Room</title>
+    <meta name="description" content="Secret Room - escape room Wrocław">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/icons/favicon.webp" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="wrapper wrapper-nav">
+            <a href="#" class="nav__logo hoverEffect">
+                <img src="./img/logo.webp" alt="Logo secret roomu">
+            </a>
+            <button class="nav__burger-btn hoverEffect" aria-label="przycisk menu"><img src="./img/icons/menu.svg"
+                    alt="" class="nav__burger-icon "></button>
+            <div class="nav__items nav__items-desktop">
+                <a href="#" class="nav__item-desktop nav__item-desktop--active">Home</a>
+                <a href="#rooms" class="nav__item-desktop">Pokoje</a>
+                <a href="#voucher" class="nav__item-desktop">Voucher</a>
+                <a href="#reviews" class="nav__item-desktop">Opinie</a>
+                <a href="#media" class="nav__item-desktop">Media</a>
+                <a href="#contact" class="nav__item-desktop">Kontakt</a>
+            </div>
+            <div class="nav__items nav__items-mobile">
+                <a href="#" class="nav__item-mobile">Home</a>
+                <a href="#rooms" class="nav__item-mobile">Pokoje</a>
+                <a href="#voucher" class="nav__item-mobile">Voucher</a>
+                <a href="#reviews" class="nav__item-mobile">Opinie</a>
+                <a href="#media" class="nav__item-mobile">Media</a>
+                <a href="#contact" class="nav__item-mobile">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="hero-shadow"></div>
+        <div class="wrapper">
+            <img src="./img/baner.webp" alt="Baner Wrocław Live Escape Game" class="header__baner">
+            <div class="header__text-box">
+                <p class="header__text-heading">UDANE WYJŚCIE W TRZECH KROKACH</p>
+                <p class="header__text">I. Zbierz ekipę</p>
+                <p class="header__text">II. Rozwiążcie zagadki</p>
+                <p class="header__text">III. Wydostańcie się z pokoju</p>
+            </div>
+        </div>
+        <a href="#rooms" class="header__check-link btn hoverEffect">Sprawdź pokoje</a>
+    </header>
+
+    <section id="rooms" class="section rooms">
+        <div class="wrapper">
+            <h2 class="section__heading">Wybierz swoje wyzwanie!</h2>
+            <p class="section__heading-text">Pokoje Underworld, Pogrzeb Arystokraty oraz Krypta są połączoną fabularnie
+                trylogią. Przejdźcie je po kolei lub wybierzcie wesję <span class="rooms__span"> PIĘCIOGODZINNĄ </span> i
+                poznajcie całą historię!</p>
+
+            <div class="rooms_cards">
+                <div class="rooms__card">
+                    <img src="./img/rooms/underworld.webp"
+                        alt="Po lewej stronie twarz wampirzycy, po prawe sylwetka wilkołaka, w tle księżyc w pełni"
+                        class="rooms__card-img">
+                    <div class="rooms__card-details">
+                        <p class="rooms__card-name">Underworld</p>
+                        <p class="rooms__card-text">Typ: Przygodowy</p>
+                        <p class="rooms__card-text">Poziom tudności: <img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-solid.svg" alt="Pokolorowana gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-regular.svg" alt="Pusta w środku gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pusta w środku gwiazdka" class="rooms__card-star">
+                        </p>
+                        <p class="rooms__card-text">Ilość graczy: 3-6 osób</p>
+                        <p class="rooms__card-text">Czas: 120 minut</p>
+                        <p class="rooms__card-text">Cena: od 240zł</p>
+                        <p class="rooms__card-text">Odwieczna walka 2 ras dosięgnęła i was. Zostaliście omyłkowo
+                            wplątani w
+                            wir
+                            zdarzeń z których na pierwszy rzut oka nie ma ucieczki…</p>
+                    </div>
+                    <a href="https://secret-room.pl/srbc-u/0/" class="rooms__card-btn btn hoverEffect">Zarezerwuj</a>
+
+                </div>
+
+                <div class="rooms__card">
+                    <img src="./img/rooms/pogrzeb_arystokraty.webp"
+                        alt="Płyta nagrobkowa z napisem Pogrzeb Arystokraty na opuszczonym cmentarzu"
+                        class="rooms__card-img">
+                    <div class="rooms__card-details">
+                        <p class="rooms__card-name">Pogrzeb Arystokraty</p>
+                        <p class="rooms__card-text">Typ: Fabularny</p>
+                        <p class="rooms__card-text">Poziom tudności: <img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-solid.svg" alt="Pokolorowana gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-regular.svg" alt="Pusta w środku gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pusta w środku gwiazdka" class="rooms__card-star">
+                        </p>
+                        <p class="rooms__card-text">Ilość graczy: 2-6 osób</p>
+                        <p class="rooms__card-text">Czas: 90 minut</p>
+                        <p class="rooms__card-text">Cena: od 200zł</p>
+                        <p class="rooms__card-text">Jedyna osoba która może wam pomóc będzie na uroczystości. Ostatnią
+                            szansą
+                            aby
+                            sprawdzić czy nie zabierze tajemnicy do grobu jest dostanie się na pogrzeb</p>
+                    </div>
+                    <a href="https://secret-room.pl/srbc-a/0/" class="rooms__card-btn btn hoverEffect">Zarezerwuj</a>
+                </div>
+
+                <div class="rooms__card">
+                    <img src="./img/rooms/krypta.webp" alt="Częściowo roztrzaskana ludzka czaska na brukowym tle"
+                        class="rooms__card-img">
+                    <div class="rooms__card-details">
+                        <p class="rooms__card-name">Krypta</p>
+                        <p class="rooms__card-text">Typ: Przygodowy</p>
+                        <p class="rooms__card-text">Poziom tudności: <img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-solid.svg" alt="Pokolorowana gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-regular.svg" alt="Pusta w środku gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pusta w środku gwiazdka" class="rooms__card-star">
+                        </p>
+                        <p class="rooms__card-text">Ilość graczy: 2-6 osób</p>
+                        <p class="rooms__card-text">Czas: 90 minut</p>
+                        <p class="rooms__card-text">Cena: od 220zł</p>
+                        <p class="rooms__card-text">Budzicie się w dziwnym ciemnym miejscu. W głowach poza straszną
+                            pustką
+                            pamiętacie jedno: osoba która wam to zrobiła musi zginąć inaczej już nigdy nie będziecie
+                            wolni…
+                        </p>
+                    </div>
+                    <a href="https://secret-room.pl/srbc-k/0/" class="rooms__card-btn btn hoverEffect">Zarezerwuj</a>
+                </div>
+
+                <div class="rooms__card">
+                    <img src="./img/rooms/prosektorium.webp"
+                        alt="Metalowy stół w prosektorium na którym znajdują się zakrwawione nożyczki oraz szpikulce"
+                        class="rooms__card-img">
+                    <div class="rooms__card-details">
+                        <p class="rooms__card-name">Prosektorium</p>
+                        <p class="rooms__card-text">Typ: Horror</p>
+                        <p class="rooms__card-text">Poziom tudności: <img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-solid.svg" alt="Pokolorowana gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-regular.svg" alt="Pusta w środku gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pusta w środku gwiazdka" class="rooms__card-star">
+                        </p>
+                        <p class="rooms__card-text">Ilość graczy: 2-6 osób</p>
+                        <p class="rooms__card-text">Czas: 90 minut</p>
+                        <p class="rooms__card-text">Cena: od 200zł</p>
+                        <p class="rooms__card-text">Dr Iwanov był wybitnym, lecz niezrozumiałym przez ówczesne
+                            społeczeństwo
+                            naukowcem. Macie okazję odtworzyć jego badania i na zawsze zmienić oblicze medycyny…</p>
+                    </div>
+                    <a href="https://secret-room.pl/srbc-p/0/" class="rooms__card-btn btn hoverEffect">Zarezerwuj</a>
+                </div>
+
+                <div class="rooms__card">
+                    <img src="./img/rooms/opuszczony_teatr_lalek.webp"
+                        alt="Lalka na sznurkach ubrana w beżowy strój przypominający strój kucharza"
+                        class="rooms__card-img">
+                    <div class="rooms__card-details">
+                        <p class="rooms__card-name">Opuszczony Teatr Lalek</p>
+                        <p class="rooms__card-text">Typ: Thriller</p>
+                        <p class="rooms__card-text">Poziom tudności: <img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-solid.svg" alt="Pokolorowana gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-regular.svg" alt="Pusta w środku gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pusta w środku gwiazdka" class="rooms__card-star">
+                        </p>
+                        <p class="rooms__card-text">Ilość graczy: 2-5 osób</p>
+                        <p class="rooms__card-text">Czas: 60 minut</p>
+                        <p class="rooms__card-text">Cena: od 160zł</p>
+                        <p class="rooms__card-text">W Opuszczonym Teatrze Lalek odbywa się spektakl. Oglądacie
+                            przedstawienie.
+                            Nagle
+                            gasną światła. Tracicie przytomność. Budzicie się w nieznanym pomieszczeniu. Jesteście
+                            zdezorientowani.
+                            Waszym zadaniem jest wydostanie się z teatru, który tak naprawdę nie jest opuszczony…</p>
+                    </div>
+                    <a href="https://secret-room.pl/srbc-l/0/" class="rooms__card-btn btn hoverEffect">Zarezerwuj</a>
+                </div>
+
+                <div class="rooms__card">
+                    <img src="./img/rooms/wiedzma_i_albercik.webp"
+                        alt="Smutny krasnal zamknięty w klatce pośród czaszek" class="rooms__card-img">
+                    <div class="rooms__card-details">
+                        <p class="rooms__card-name">Wiedźma i Albercik</p>
+                        <p class="rooms__card-text">Typ: Fantasy</p>
+                        <p class="rooms__card-text">Poziom tudności: <img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-solid.svg" alt="Pokolorowana gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-regular.svg" alt="Pusta w środku gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pusta w środku gwiazdka" class="rooms__card-star">
+                        </p>
+                        <p class="rooms__card-text">Ilość graczy: 1-4 osób</p>
+                        <p class="rooms__card-text">Czas: 60 minut</p>
+                        <p class="rooms__card-text">Cena: od 180zł</p>
+                        <p class="rooms__card-text">Podczas waszej podróży przez starodawną puszczę zostajecie
+                            ugoszczeni w
+                            wiosce o
+                            wdzięcznej nazwie Skrzacikowo. Opowiadają wam historię ich przyjaciela - skrzata Albercika,
+                            który
+                            pięć
+                            lat temu został uwięziony przez złą czarownicę Rzepichę. Postanawiacie go uratować. Noc
+                            sabatu
+                            na
+                            Babiej
+                            Górze to jedyna okazja w roku gdy wiedźma jest poza swoją chatką</p>
+                    </div>
+                    <a href="https://secret-room.pl/srbc-s/0/" class="rooms__card-btn btn hoverEffect">Zarezerwuj</a>
+                </div>
+
+                <div class="rooms__card">
+                    <img src="./img/rooms/przeklety_pierscien.webp" alt="Złoty pierścień błyszczący w błocie"
+                        class="rooms__card-img">
+                    <div class="rooms__card-details">
+                        <p class="rooms__card-name">Przeklęty Pierścień</p>
+                        <p class="rooms__card-text">Typ: Przygodowy</p>
+                        <p class="rooms__card-text">Poziom tudności: <img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-solid.svg" alt="Pokolorowana gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-regular.svg" alt="Pusta w środku gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pusta w środku gwiazdka" class="rooms__card-star">
+                        </p>
+                        <p class="rooms__card-text">Ilość graczy: 1-4 osób</p>
+                        <p class="rooms__card-text">Czas: 60 minut</p>
+                        <p class="rooms__card-text">Cena: od 180zł</p>
+                        <p class="rooms__card-text">Jako śmiałkowie podjęliście się zdania, które na pierwszy rzut oka,
+                            wydaje
+                            się
+                            niemożliwe. Jednakże, od waszego zadania zależy los całego świata. Zaufajcie swojemu
+                            przeznaczeniu i
+                            wyruszcie w daleką podróż</p>
+                    </div>
+                    <a href="https://secret-room.pl/srbc-r/0/" class="rooms__card-btn btn hoverEffect">Zarezerwuj</a>
+                </div>
+
+                <div class="rooms__card">
+                    <img src="./img/rooms/kraina_wiecznej_nocy.webp"
+                        alt="W ciemnościach widoczna jest posiadłość, którą otacza mgła oraz góry. Nad posiedłością latają kruki oraz unoszą się chmury"
+                        class="rooms__card-img">
+                    <div class="rooms__card-details">
+                        <p class="rooms__card-name">Kraina Wiecznej Nocy</p>
+                        <p class="rooms__card-text">Typ: Przygodowy</p>
+                        <p class="rooms__card-text">Poziom tudności: <img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-solid.svg" alt="Pokolorowana gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-regular.svg" alt="Pusta w środku gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pusta w środku gwiazdka" class="rooms__card-star">
+                        </p>
+                        <p class="rooms__card-text">Ilość graczy: 1-4 osób</p>
+                        <p class="rooms__card-text">Czas: 60 minut</p>
+                        <p class="rooms__card-text">Cena: od 180zł</p>
+                        <p class="rooms__card-text">Od dawna panuje ciemność, a najdzielniejsi rycerze nie są w stanie
+                            pomóc.
+                            Ludzie
+                            czekają na bohaterów, którzy ich wyzwolą i odnajdą słońce. Czekają na Was…</p>
+                    </div>
+                    <a href="https://secret-room.pl/srbc-n/0/" class="rooms__card-btn btn hoverEffect">Zarezerwuj</a>
+                </div>
+
+                <div class="rooms__card">
+                    <img src="./img/rooms/pokoj_babci.webp"
+                        alt="Stary pokój z krewnianymi dwoma krzesłami oraz maszyną do szycia. W rogu znajduje się stojak z białą sukienką na nim, z okna na tyłach wlatują promienie słońca"
+                        class="rooms__card-img">
+                    <div class="rooms__card-details">
+                        <p class="rooms__card-name">Pokój Babci</p>
+                        <p class="rooms__card-text">Typ: Kryminalny</p>
+                        <p class="rooms__card-text">Poziom tudności: <img src="./img/icons/star-solid.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-solid.svg" alt="Pokolorowana gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pokolorowana gwiazdka" class="rooms__card-star"><img
+                                src="./img/icons/star-regular.svg" alt="Pusta w środku gwiazdka"
+                                class="rooms__card-star"><img src="./img/icons/star-regular.svg"
+                                alt="Pusta w środku gwiazdka" class="rooms__card-star">
+                        </p>
+                        <p class="rooms__card-text">Ilość graczy: 2-5 osób</p>
+                        <p class="rooms__card-text">Czas: 60 minut</p>
+                        <p class="rooms__card-text">Cena: od 160zł</p>
+                        <p class="rooms__card-text">Wasza babcia to miła i spokojna kobieta. W niedzielę zawsze
+                            spotykacie
+                            się u
+                            niej całą rodziną na obiedzie. Dziś spodziewacie się pysznego rosłu, ale babci nie ma w
+                            domu.
+                            Zaniepokojeni przeszukujecie jej pokój. Odkryjcie tajemnicę Pokoju Babci i poznajcie jej
+                            sekret…
+                        </p>
+                    </div>
+                    <a href="https://secret-room.pl/srbc-b/0/" class="rooms__card-btn btn hoverEffect">Zarezerwuj</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="voucher" class="section voucher">
+        <div class="wrapper">
+            <div class="voucher__heading-box">
+                <h2 class="section__heading">Voucher</h2>
+                <p class="section__heading-text">Zagadki na prezent? Czemu nie! Wybierz voucher na jeden z naszych
+                    pokoi.
+                    Aby
+                    dokonać zakupu prosimy o kontakt telefoniczny lub e-mailowy</p>
+            </div>
+
+            <div class="voucher__cards">
+                <div class="voucher__card">
+                    <div class="voucher__card-top">
+                        <img class="voucher__card-key-lock" src="./img/key_lock.webp"
+                            alt="Czarny kształ imitujący dziurkę na klucz">
+                    </div>
+
+                    <div class="voucher__card-bot">
+                        <p class="voucher__card-text">Pogrzeb Arystokraty</p>
+                        <p class="voucher__card-text">Krypta</p>
+                        <p class="voucher__card-text">Cena 260zł</p>
+                    </div>
+                </div>
+
+                <div class="voucher__card">
+                    <div class="voucher__card-top">
+                        <img class="voucher__card-key-lock" src="./img/key_lock.webp"
+                            alt="Czarny kształ imitujący dziurkę na klucz">
+                    </div>
+
+                    <div class="voucher__card-bot">
+                        <p class="voucher__card-text">Kraina Wiecznej Nocy</p>
+                        <p class="voucher__card-text">Przeklęty Pierścień</p>
+                        <p class="voucher__card-text">Cena 210zł</p>
+                    </div>
+                </div>
+
+                <div class="voucher__card">
+                    <div class="voucher__card-top">
+                        <img class="voucher__card-key-lock" src="./img/key_lock.webp"
+                            alt="Czarny kształ imitujący dziurkę na klucz">
+                    </div>
+
+                    <div class="voucher__card-bot">
+                        <p class="voucher__card-text">Underworld</p>
+                        <p class="voucher__card-text">Cena 290zł</p>
+                    </div>
+                </div>
+
+                <div class="voucher__card">
+                    <div class="voucher__card-top">
+                        <img class="voucher__card-key-lock" src="./img/key_lock.webp"
+                            alt="Czarny kształ imitujący dziurkę na klucz">
+                    </div>
+
+                    <div class="voucher__card-bot">
+                        <p class="voucher__card-text">Prosektorium</p>
+                        <p class="voucher__card-text">Cena 230zł</p>
+                    </div>
+                </div>
+
+                <div class="voucher__card">
+                    <div class="voucher__card-top">
+                        <img class="voucher__card-key-lock" src="./img/key_lock.webp"
+                            alt="Czarny kształ imitujący dziurkę na klucz">
+                    </div>
+
+                    <div class="voucher__card-bot">
+                        <p class="voucher__card-text">Pozostałe pokoje</p>
+                        <p class="voucher__card-text">Cena 200zł</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section reviews">
+        <div class="hero-shadow"></div>
+        <div class="wrapper">
+            <h2 class="section__heading">Opinie naszych klientów</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews__box">
+                        <p class="reviews__box-quote">"Pokój bardzo przyjemny, świetny „na rozgrzewkę”. Pokój
+                            przechodziliśmy w dwie osoby i udało nam się wyjść. Wystrój oddawał w pełni klimat, pasował
+                            do fabuły. Zagadki proste, da się przekombinować, dlatego czasem faktycznie mniej
+                            kombinowania znaczy lepiej. Przesympatyczna MG- Zuza zadbała o to, żebyśmy wyszli z pokoju
+                            bardzo zadowoleni (gorąco pozdrawiamy!). Pokój wart odwiedzenia szczególnie przez osoby
+                            początkujące- polecamy. :)"</p>
+                        <p class="reviews__box-author">~ _trebuH</p>
+                        <p class="reviews__box-room-name">Przeklęty Pierścień</p>
+                    </div>
+
+                    <div class="swiper-slide reviews__box">
+                        <p class="reviews__box-quote">"Secret Room robi po prostu śliczne pokoje! Zero kabli na
+                            wierzchu, niedomalowanych czy urwanych elementów! I to się ceni:) Motyw "z głową" też
+                            zostanie w pamięci jako mily escapowy smaczek:) Zagadki logiczne, nietrudne więc bardzo
+                            grywalne. A każdy kolejny etap sprawiał przyjemność:) Dzieliło nas 5min od rekordu, ale te
+                            26min w pokoju było świetnie zagospodarowane. Polecam :)"</p>
+                        <p class="reviews__box-author">~ beras77</p>
+                        <p class="reviews__box-room-name">Kraina Wiecznej Nocy</p>
+                    </div>
+
+                    <div class="swiper-slide reviews__box">
+                        <p class="reviews__box-quote">"Pokój ze świetnym klimatem i nastrojem pasującym do tego czym
+                            jest - Prosektorium. Jest w nim naprawdę dużo do roboty, polecam iść większą grupą. Poziom
+                            trudności naszym zdaniem powinien być średniozaawansowany, polecam odwiedzić mając już
+                            trochę doświadczeniach w escepe roomach :) Obsługa świetna, bardzo dobrze wprowadzająca w
+                            tematykę."</p>
+                        <p class="reviews__box-author">~ reiko.xd</p>
+                        <p class="reviews__box-room-name">Prosektorium</p>
+                    </div>
+
+                    <div class="swiper-slide reviews__box">
+                        <p class="reviews__box-quote">"Daliśmy się całkowicie ponieść wciągającej historii, która spójna
+                            od początku okazała się prowadzić do ciekawego finału. Scenariusz bardzo logiczny i zagadki
+                            ścisłe splecione z fabułą, sensowne, spójne - takie historie lubimy najbardziej. Wykonanie
+                            dekoracji i rekwizytów bardzo dobre, wszystko utrzymuje klimat i nie ma „rozpraszaczy”,
+                            które dekoncentrują i wywalają poza zabawę. Pokój raczej nietrudny, ale na pewno nie
+                            banalny. Niestety często lubimy przekombinować i jedna zagadka zatrzymała nas na dłuższy
+                            czas ;) Bardzo miła i pomocna obsługa. Polecam!"</p>
+                        <p class="reviews__box-author">~ Daria Białecka</p>
+                        <p class="reviews__box-room-name">Opuszczony Teatr Lalek</p>
+                    </div>
+
+                    <div class="swiper-slide reviews__box">
+                        <p class="reviews__box-quote">"Pokój typowo dla początkujących, choć poszliśmy do niego jako
+                            doświadczeni. Pokój sympatyczny, oparty na tradycyjnych kłódkach ale z kilkoma naprawdę
+                            fajnymi pomysłami na ukrycie przejścia dalej. Po malutku odkrywamy co za babcię mamy i
+                            faktycznie, niezła babka. Bardzo fajna fabuła. Choć wyszyliśmy na dużo przed czasem polecamy
+                            wszystkim. Fajnie jest nieraz odświeżyć sobie myślenie na poziomie podstawowym, bez
+                            zastanawiania się czy to czasem nie za proste."</p>
+                        <p class="reviews__box-author">~ robertszw</p>
+                        <p class="reviews__box-room-name">Pokój Babci</p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="media" class="section media">
+        <div class="wrapper">
+            <h2 class="section__heading">Media</h2>
+
+            <div class="media__yt-films">
+                <iframe loading="lazy" class="media__yt-film"
+                    src="https://www.youtube.com/embed/_mLR1RoeZ6c?si=tO6VNsSI_uJVHEbP" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe loading="lazy" class="media__yt-film"
+                    src="https://www.youtube.com/embed/PrO94dvfQIQ?si=8EfJhXEpX_aOuC6o" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe loading="lazy" class="media__yt-film"
+                    src="https://www.youtube.com/embed/GEu18E6aidk?si=j-DD4bZCQLFFPrLx" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe loading="lazy" class="media__yt-film"
+                    src="https://www.youtube.com/embed/4gbi34Qtea4?si=o2CdmVRgaWsNaxoD" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe loading="lazy" class="media__yt-film"
+                    src="https://www.youtube.com/embed/giVHD4soD9w?si=KZ2Ttpm4OyUs1oUx" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="wrapper">
+            <h2 class="section__heading">Kontakt</h2>
+            <div class="contact__box">
+                <div class="contact__box-map">
+                    <iframe class="contact__box-map-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.6199131286379!2d17.027088254866953!3d51.10771126043482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc274bccc28f3%3A0x1f059d96443ac471!2sKazimierza%20Wielkiego%2027C%2C%2050-074%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1720795351938!5m2!1spl!2spl"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact__box-text">
+                    <p class="contact__text">Nasz adres:</p>
+                    <p class="contact__text">ul. Kazimierza Wielkiego 27C, 50-077 Wrocław</p>
+                    <p class="contact__text">Wejście na plac bramą od ul. Kazimierza Wielkiego</p>
+
+                    <p class="contact__text">Numery:</p>
+                    <p class="contact__text">Rezerwacja telefoniczna: <a
+                            href="tel:537336386">537&#8209;336&#8209;386</a></p>
+                    <p class="contact__text">Kontakt w innych sprawach: <a
+                            href="tel:537336336">537&#8209;336&#8209;336</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
