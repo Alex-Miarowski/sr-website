@@ -1,4 +1,4 @@
-# My Virtual Bookshelf
+# SR Website
 
 **Live:** [https://alex-miarowski.github.io/sr-website/](https://alex-miarowski.github.io/sr-website/)
 
