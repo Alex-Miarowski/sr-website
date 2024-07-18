@@ -59,24 +59,20 @@ const activeClassReset = () => {
 const checkScrollSpy = () => {
 	if (window.innerWidth >= 992) {
 		window.addEventListener('scroll', scrollSpyHandle)
-	}
-	else{
+	} else {
 		window.removeEventListener('scroll', scrollSpyHandle)
 	}
 }
 
 const scrollSpyHandle = () => {
-	for (let i = 0; i < sections.length; i++) {
-		activeClassReset()
-		if (nav.offsetTop + nav.offsetHeight <= sections[i].offsetTop) {
-			allNavDesktopItems[i].classList.add('nav__item-desktop--active')
-			break
+		for (let i = 0; i < sections.length; i++) {
+			activeClassReset()
+			if (nav.offsetTop + nav.offsetHeight <= sections[i].offsetTop) {
+				allNavDesktopItems[i].classList.add('nav__item-desktop--active')
+				return
+			}
 		}
-		if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
-			allNavDesktopItems[sections.length].classList.add('nav__item-desktop--active')
-			break
-		}
-	}
+		allNavDesktopItems[sections.length].classList.add('nav__item-desktop--active')
 }
 
 // SWIPER
